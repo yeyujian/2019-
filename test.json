@@ -1,0 +1,30 @@
+
+{
+  "headers": {"Content-Type":"application/json","token":"fd8d00820b5f4042c8253c76a2880799"},
+  "data":[
+    {
+      "url":"http://202.116.163.200:12000/login",
+      "method":"POST",
+      "req_data":{"user_code":"test_user","user_key":"TestUser_Key"},
+      "res_data":["token","user_id"]
+    },
+        {
+      "url":"http://202.116.163.200:12000/root/add_user",
+      "method":"POST",
+      "req_data":{"user_code":"1","user_key":"2"},
+      "res_data":["code","msg"]
+    },
+        {
+      "url":"http://202.116.163.200:12000/root/query_user_list",
+      "method":"POST",
+      "req_data":{},
+      "res_data":["code","msg","user_list"]
+    },
+        {
+      "url":"http://202.116.163.200:12000/customer/query_project",
+      "method":"POST",
+      "req_data":{"user_id":2},
+      "res_data":["project_list","msg","msg"]
+    }
+  ]
+}
